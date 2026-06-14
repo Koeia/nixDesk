@@ -42,13 +42,7 @@
       plugins = [ ];
       theme = "aussiegeek";
     };
-    profileExtra = ''
-      if [ -z "$WAYLAND_DISPLAY" ] && [ "$XDG_VTNR" = 1 ]; then
-        exec start-hyprland
-      fi
-    '';
   };
-  home.file.".config/hypr".source = ./config/hypr;
 
   home.packages = with pkgs; [
     git
