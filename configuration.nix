@@ -22,10 +22,19 @@
 
   time.timeZone = "America/New_York";
 
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
+  services = {
+    desktopManager.plasma6.enable = true;
+
+    displayManager.plasma-login-manager.enable = true;
+
+    xserver.enable = true;
   };
+
+  environment.plasma6.excludePackages = with pkgs.kdePackages; [
+    plasma-browser-integration
+    konsole
+    elisa
+  ];
 
   users.users.jctannu4 = {
     isNormalUser = true;
