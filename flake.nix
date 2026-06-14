@@ -30,7 +30,7 @@
       ...
     }:
     {
-      nixosConfigurations.nixCall = nixpkgs.lib.nixosSystem {
+      nixosConfigurations.nixDesk = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs = { inherit inputs; };
         modules = [
