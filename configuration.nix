@@ -70,6 +70,7 @@
     brightnessctl
     udiskie
     usbutils
+    gnome-clocks
     yazi
     termius
   ];
