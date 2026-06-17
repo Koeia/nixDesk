@@ -32,7 +32,7 @@
       enable = true;
     };
     shellAliases = {
-      update = "sudo nixos-rebuild switch --flake ~/nixos-dotfiles#nixDesk";
+      update = "~/nixos-dotfiles/Scripts/update.sh";
     };
     initContent = ''
       		${pkgs.fastfetch}/bin/fastfetch
