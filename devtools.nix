@@ -5,5 +5,6 @@
     nmap
     wireshark-cli
     jetbrains.webstorm
+    jetbrains.gateway
   ];
 }
