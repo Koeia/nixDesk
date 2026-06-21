@@ -4,5 +4,6 @@
     android-tools
     nmap
     wireshark-cli
+    jetbrains.webstorm
   ];
 }
